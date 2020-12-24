@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:padding="30dp"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_200"
+        android:paddingHorizontal="@dimen/margin_75"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/login"
+        android:textSize="42sp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/margin_30"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_30">
+    <EditText
+        android:padding="@dimen/margin_10"
+        android:id="@+id/email"
+        android:hint="@string/email"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border_primary"
+        android:textSize="@dimen/font_paragraph"
+        android:textAlignment="textStart"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_marginTop="@dimen/margin_20"
+        android:padding="@dimen/margin_10"
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border_primary"
+        android:textSize="@dimen/font_paragraph"
+        android:textAlignment="textStart"
+        android:inputType="textPassword"
+        />
+     <TextView
+                    android:id="@+id/forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:clickable="true"
+                    android:text="@string/forgetpassword"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:background="@color/colorAccent"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_punya_akun"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/font_small"/>
+
+        <TextView
+            android:id="@+id/tombolregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_3"
+            android:clickable="true"
+            android:fontFamily="@font/poppins"
+            android:text="@string/sign_up"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/font_small" />
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="primary">#0DECC9</color>
+    <color name="primary_transparent">#800DECC9</color>
+    <color name="primary_variant">#00FFD7</color>
+    <color name="secondary">#EF476F</color>
+    <color name="compliment_yellow">#FFC43D</color>
+    <color name="compliment_pink">#E12997</color>
+    <color name="compliment_blue">#3083DC</color>
+    <color name="black">#100F0F</color>
+    <color name="font_dark">#454141</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_background">#FBFBFB</color>
+</resources>

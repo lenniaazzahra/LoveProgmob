@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgetpassword">Forget Password?</string>
+    <string name="tidak_punya_akun">Dont Have Account?</string>
+    <string name="sign_up">Sign Up</string>
+
+
+    <string name="join_teacher">Join Teacher</string>
+    <string name="join_teacher_desc_1">
+        Teachers work in public or private childcare centers, elementary and high schools, and postsecondary schools. Some teachers also work online from their home office or find employment in corporate training. Many teachers work a portion of the year, enjoying an extended break during summers. Most school systems also provide extended breaks around holidays.
+    </string>
+    <string name="join_teacher_desc_2">
+        During the school year, teachers typically work Monday-Friday in the classroom. However, many teachers spend nights and weekends grading papers and developing lesson plans for the coming week. Summers may also include continuing education or professional development.
+    </string>
+
+
+    <string name="teacher_registration">Teacher Registration</string>
+    <string name="submit_data">Submit Data</string>
+    <string name="teaching_detail">Teaching Detail</string>
+    <string name="teaching">what are you going to teach ?</string>
+    <string name="teaching_desc">Insert Your specialist</string>
+    <string name="teaching_people_max">how many students maximum you teach ?</string>
+    <string name="teaching_people_max_desc">Insert Maximum Student</string>
+    <string name="teaching_people_method">what teaching methods did you use?</string>
+    <string name="teaching_people_method_desc">input teaching methods</string>
+    <string name="describe_yourself">make other people know yourself better </string>
+    <string name="describe_yourself_desc">describe yourself</string>
+    <string name="location_and_pricing">Location &amp; Pricing</string>
+    <string name="teaching_location">Coverage of the teaching location</string>
+    <string name="teaching_location_desc">Input Your Coverage</string>
+    <string name="pricing">how much is the hourly course ?</string>
+    <string name="pricing_Desc">Input your price</string>
+    <string name="term_and_condition">I agree to sell my soul to lesson partners in accordance with the terms &amp; conditions</string>
+    <string name="title_activity_menunavigasi">menunavigasi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambahiklan"
+    android:padding="30dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_75"
+            android:layout_alignParentTop="true"
+            android:paddingHorizontal="@dimen/margin_20">
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="@dimen/standard"
+                android:layout_height="@dimen/standard"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_round_arrow_back_24"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Advertisment"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/agreement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_75">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/teaching_detail"
+                        android:textColor="@color/font_dark"
+                        android:textSize="@dimen/font_title" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/teaching"
+                            android:textColor="@color/font_dark" />
+
+                        <EditText
+                            android:id="@+id/specialist"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_40"
+                            android:background="@drawable/edit_text_border_primary"
+                            android:fontFamily="@font/poppins"
+                            android:hint="@string/teaching_desc"
+                            android:inputType="text"
+                            android:paddingHorizontal="@dimen/margin_10"
+                            android:textSize="@dimen/font_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/teaching_people_max"
+                            android:textColor="@color/font_dark" />
+
+                        <EditText
+                            android:id="@+id/teaching_people"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_40"
+                            android:background="@drawable/edit_text_border_primary"
+                            android:fontFamily="@font/poppins"
+                            android:hint="@string/teaching_people_method_desc"
+                            android:inputType="number"
+                            android:paddingHorizontal="@dimen/margin_10"
+                            android:textSize="@dimen/font_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/teaching_people_max"
+                            android:textColor="@color/font_dark" />
+
+                        <EditText
+                            android:id="@+id/teaching_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_40"
+                            android:background="@drawable/edit_text_border_primary"
+                            android:fontFamily="@font/poppins"
+                            android:hint="@string/teaching_people_method_desc"
+                            android:inputType="text"
+                            android:paddingHorizontal="@dimen/margin_10"
+                            android:textSize="@dimen/font_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/describe_yourself"
+                            android:textColor="@color/font_dark" />
+
+                        <EditText
+                            android:id="@+id/teacher_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_border_primary"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:hint="@string/describe_yourself_desc"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:paddingHorizontal="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_5"
+                            android:singleLine="false"
+                            android:textSize="@dimen/font_text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/location_and_pricing"
+                        android:textColor="@color/font_dark"
+                        android:textSize="@dimen/font_title" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/teaching_location"
+                            android:textColor="@color/font_dark" />
+
+                        <EditText
+                            android:id="@+id/location_coverage"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_40"
+                            android:background="@drawable/edit_text_border_primary"
+                            android:fontFamily="@font/poppins"
+                            android:hint="@string/teaching_location_desc"
+                            android:inputType="text"
+                            android:paddingHorizontal="@dimen/margin_10"
+                            android:textSize="@dimen/font_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/margin_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/pricing"
+                            android:textColor="@color/font_dark" />
+
+                        <EditText
+                            android:id="@+id/teaching_pricing"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_40"
+                            android:background="@drawable/edit_text_border_primary"
+                            android:fontFamily="@font/poppins"
+                            android:hint="@string/pricing_Desc"
+                            android:inputType="number"
+                            android:paddingHorizontal="@dimen/margin_10"
+                            android:textSize="@dimen/font_text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/term_and_condition"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submit_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_75"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:text="@string/submit_data"
+            android:background="@color/colorAccent"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
