@@ -7,19 +7,30 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="id.guscahya.myapplication.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:name="id.guscahya.myapplication.ui.main5.HomeFragment"
+        android:label=""
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="id.guscahya.myapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:id="@+id/nav_profile"
+        android:name="id.guscahya.myapplication.ui.main1.ProfileNewFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_buatiklan"
+        android:name="id.guscahya.myapplication.ui.main2.BuatIklanFragment"
+        android:label="@string/buat_iklan"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="id.guscahya.myapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:id="@+id/nav_pesanan_saya"
+        android:name="id.guscahya.myapplication.ui.main3.PesananSayaFragment"
+        android:label="@string/pesanan_saya"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_log_out"
+        android:name="id.guscahya.myapplication.ui.main4.LogOutFragment"
+        android:label="@string/log_out"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

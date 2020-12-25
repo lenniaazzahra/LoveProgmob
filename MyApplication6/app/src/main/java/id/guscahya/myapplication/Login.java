@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import id.guscahya.myapplication.penyimpanan.*;
+import id.guscahya.myapplication.SessionManager;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -39,6 +40,7 @@ public class Login extends AppCompatActivity {
     private TextView tombolregister;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
+    SessionManager sessionManager;
     private static String URL_LOGIN = "http://"+ip.ipc+"/pratikum/public/api/login";
 
     @Override
@@ -46,11 +48,13 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        sessionManager = new SessionManager(this);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         masuk = findViewById(R.id.masuk);
         pb = findViewById(R.id.pb);
         tombolregister = findViewById(R.id.tombolregister);
+
 
         masuk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,16 +95,19 @@ public class Login extends AppCompatActivity {
                             if (success.equals("1")){
 
 
-                                    pb.setVisibility(View.GONE);
-                                    masuk.setVisibility(View.VISIBLE);
-                                    sharedPreferences = getSharedPreferences(penyimpanan.SHARED_PREFERENCE_NAME, Context.MODE_PRIVATE);
-                                    editor = sharedPreferences.edit();
-                                    editor.putString(penyimpanan.USERNAME,jsonObject.getString("name"));
-                                    editor.putString(penyimpanan.EMAIL,jsonObject.getString("email"));
-//
-                                    editor.apply();
-//
-
+                                pb.setVisibility(View.GONE);
+                                masuk.setVisibility(View.VISIBLE);
+                                sharedPreferences = getSharedPreferences(penyimpanan.SHARED_PREFERENCE_NAME, Context.MODE_PRIVATE);
+                                editor = sharedPreferences.edit();
+                                editor.putString(sessionManager.NAME,jsonObject.getString("name"));
+                                editor.putString(sessionManager.EMAIL,jsonObject.getString("email"));
+//                                    editor.putString(penyimpanan.TOKEN,jsonObject.getString("token"));
+                                editor.apply();
+                                HashMap<String, String> user = sessionManager.getUserDetail();
+                                String name = user.get(sessionManager.NAME);
+                                String email = user.get(sessionManager.EMAIL);
+                                sessionManager.createSession(name, email);
+                                startActivity(new Intent(Login.this, menunavigasi.class));
                                 Toast.makeText(Login.this,sharedPreferences.getString(penyimpanan.USERNAME,"tidak ada"), Toast.LENGTH_SHORT).show();
 
                             }else{
