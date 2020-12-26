@@ -11,12 +11,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import id.guscahya.myapplication.R;
 
 public class HomeFragment extends Fragment {
 
-
+    private Button msg;
 
     public static HomeFragment newInstance() {
         return new HomeFragment();

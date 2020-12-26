@@ -26,7 +26,7 @@ public class BuatIklanFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.main_fragment6, container, false);
+        View root = inflater.inflate(R.layout.iklan_fragment, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         return root;    }
 

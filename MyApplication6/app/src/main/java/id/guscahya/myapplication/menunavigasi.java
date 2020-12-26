@@ -1,6 +1,7 @@
 package id.guscahya.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -37,7 +38,7 @@ public class menunavigasi extends AppCompatActivity {
         String nama = preferences.getString(penyimpanan.USERNAME, null);
 //        String email = preferences.getString(penyimpanan.EMAIL,"");
         sessionManager = new SessionManager(this);
-        sessionManager.checkLogin();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -71,6 +72,8 @@ public class menunavigasi extends AppCompatActivity {
                 int id = menuItem.getItemId();
                 if(id == R.id.nav_log_out) {
                     sessionManager.logout();
+                }else if(id == R.id.nav_buatiklan) {
+                    startActivity(new Intent(menunavigasi.this, Buat_Iklan.class));
                 }
                 return true;
             }

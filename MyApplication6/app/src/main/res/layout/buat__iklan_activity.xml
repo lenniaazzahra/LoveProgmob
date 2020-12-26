@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Buat_Iklan" />
+    tools:context=".Buat_Iklan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_75"
+            android:layout_alignParentTop="true"
+            android:paddingHorizontal="@dimen/margin_20">
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="@dimen/standard"
+                android:layout_height="@dimen/standard"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_round_arrow_back_24"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/advername"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:orientation="vertical"
+            android:id="@+id/linear1">
+
+
+            <Button
+                android:id="@+id/createadver"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_75"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:text="@string/tambahiklan"
+                android:background="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/createadvertisement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:text="@string/iklansaya"
+                android:background="@color/colorAccent"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
