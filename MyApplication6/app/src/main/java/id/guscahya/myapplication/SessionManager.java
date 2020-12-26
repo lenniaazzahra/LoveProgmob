@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
 import java.util.HashMap;
 
 import id.guscahya.myapplication.Login;
-import id.guscahya.myapplication.menunavigasi;
+import id.guscahya.myapplication.Home;
 
 public class SessionManager {
 
@@ -48,7 +48,7 @@ public class SessionManager {
         if (!this.isLoggin()){
             Intent i = new Intent(context, Login.class);
             context.startActivity(i);
-            ((menunavigasi) context).finish();
+            ((Home) context).finish();
         }
     }
 
@@ -68,7 +68,7 @@ public class SessionManager {
         editor.commit();
         Intent i = new Intent(context, Login.class);
         context.startActivity(i);
-        ((menunavigasi) context).finish();
+        ((Home) context).finish();
 
     }
 }

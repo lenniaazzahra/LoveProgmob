@@ -8,6 +8,14 @@
     <string name="sign_up">Sign Up</string>
     <string name="join_teacher">Register</string>
 
+    <!-- HOME -->
+    <string name="hello">Hello, Welcome !</string>
+    <string name="user">Lennia</string>
+    <string name="myprofile">My Profile</string>
+    <string name="private_schedule">Make an Advertisement, Be Lesson Partner</string>
+    <string name="category">Many Specialization, Go Find Your Teacher</string>
+    <string name="teacher">Lesson Partner</string>
+    <string name="see_all">See All</string>
 
     <!--    Advertisement -->
     <string name="advername"> Advertisement List</string>

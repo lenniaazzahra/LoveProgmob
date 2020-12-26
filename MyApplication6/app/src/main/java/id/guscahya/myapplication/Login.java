@@ -101,13 +101,12 @@ public class Login extends AppCompatActivity {
                                 editor = sharedPreferences.edit();
                                 editor.putString(sessionManager.NAME,jsonObject.getString("name"));
                                 editor.putString(sessionManager.EMAIL,jsonObject.getString("email"));
-//                                    editor.putString(penyimpanan.TOKEN,jsonObject.getString("token"));
                                 editor.apply();
                                 HashMap<String, String> user = sessionManager.getUserDetail();
                                 String name = user.get(sessionManager.NAME);
                                 String email = user.get(sessionManager.EMAIL);
                                 sessionManager.createSession(name, email);
-                                startActivity(new Intent(Login.this, menunavigasi.class));
+                                startActivity(new Intent(Login.this, Home.class));
                                 Toast.makeText(Login.this,sharedPreferences.getString(penyimpanan.USERNAME,"tidak ada"), Toast.LENGTH_SHORT).show();
 
                             }else{

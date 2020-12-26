@@ -11,7 +11,10 @@
         android:roundIcon="@drawable/ic_baseline_account_box_24"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home"><intent-filter>
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".Buat_Iklan" />
         <activity android:name=".ProfileNew" />
         <activity android:name=".Log_Out" />
